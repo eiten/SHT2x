@@ -1,0 +1,5 @@
+SHT2x		KEYWORD1
+readRH		KEYWORD2
+readT		KEYWORD2
+softReset	KEYWORD2
+setHeater	KEYWORD2
