@@ -1,7 +1,9 @@
 SHT2x
 =====
 
-Arduino Libraries for the SHT2x series of sensiron sensors
+Arduino Libraries for the SHT2x series of sensiron sensors.
+For more information about this sensors and datasheets, please check
+<http://www.sensirion.com/en/products/humidity-temperature/humidity-sensor-sht21/>.
 
 Copyright 2012 Eduard Iten
 
