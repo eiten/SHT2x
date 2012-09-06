@@ -7,6 +7,25 @@ For more information about this sensors and datasheets, please check
 
 Copyright 2012 Eduard Iten
 
+Download and install
+--------------------
+
+Possibility 1:
+- Open a terminal
+- Go to your scetch direcotry
+- If non existing, create a directory called libraries (md libaries)
+- Clone the git repository: git clone git://github.com/eiten/SHT2x.git
+
+Possibility 2:
+- Go to <https://github.com/eiten/SHT2x/downloads>
+- Click on Downloads
+- Click on the "Download as zip" or "Download as tar.gz" button
+- Extract the contents of the archive to <yourscetchfolder>/libraries/
+- Rename the folder to "SHT2x"
+
+License
+-------
+
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
