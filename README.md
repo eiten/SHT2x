@@ -12,8 +12,8 @@ Download and install
 
 Possibility 1:
 - Open a terminal
-- Go to your sketch direcotry (most probably ~/sketchbook/)
-- If non existing, create a directory called libraries (md libaries)
+- Go to your sketch direcotry (most probably cd ~/sketchbook/)
+- If not existing, create a directory called libraries (mkdir libaries)
 - Clone the git repository: git clone git://github.com/eiten/SHT2x.git
 
 Possibility 2:
