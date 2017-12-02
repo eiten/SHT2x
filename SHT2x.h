@@ -76,6 +76,7 @@ class SHT2xClass {
 public:
      void softReset();
      void setHeater(uint8_t on);
+     void setResolution(SHT2xResolution resolution);
      float readRH();
      float readT();
 

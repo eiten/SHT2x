@@ -52,6 +52,7 @@ uint8_t SHT2xClass::readUserRegister()
 void SHT2xClass::writeUserRegister(uint8_t userRegister)
 {
      Wire.beginTransmission(SHT2xADDR);
+     Wire.write(USER_REG_W);
      Wire.write(userRegister);
      Wire.endTransmission();
 }
@@ -75,7 +76,7 @@ uint16_t SHT2xClass::readMeasurement(SHT2xMeasureType type)
 
      //wait for measurement to complete.
      timeout= millis()+300;
-     while (!digitalRead(18)) {
+     while (!digitalRead(PIN_WIRE_SCL)) {
           if (millis()>timeout) {
                return 0;
           }
@@ -114,5 +115,15 @@ void SHT2xClass::setHeater(uint8_t on)
      } else {
           userRegister=(userRegister&~SHT2x_HEATER_MASK) | SHT2x_HEATER_OFF;
      }
+     writeUserRegister(userRegister);
 }
+
+void SHT2xClass::setResolution(SHT2xResolution resolution)
+{
+    uint8_t userRegister;
+    userRegister=readUserRegister();
+    userRegister=(userRegister&~SHT2x_RES_MASK) | resolution;
+    writeUserRegister(userRegister);
+}
+
 SHT2xClass SHT2x;
