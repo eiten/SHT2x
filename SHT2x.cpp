@@ -75,7 +75,7 @@ uint16_t SHT2xClass::readMeasurement(SHT2xMeasureType type)
 
      //wait for measurement to complete.
      timeout= millis()+300;
-     while (!digitalRead(18)) {
+     while (!digitalRead(PIN_WIRE_SCL)) {
           if (millis()>timeout) {
                return 0;
           }
